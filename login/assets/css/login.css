@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cddbe3;
+  font-family: "Poppins", sans-serif;
+}
+.parent {
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+em {
+    text-decoration:bold;
+    
+}
+.box {
+    padding-top:40px;
+    width:27%;
+    height:100%;
+    border-radius:30px;
+    float:center;
+    font-size:36px;
+    border:3px solid grey;
+    font-family:segoe UI;
+    background-color:white;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+.box2 {
+    padding-top:40px;
+    width:50%;
+    height:100%;
+    border-radius:30px;
+    float:center;
+    font-size:36px;
+    border:3px solid grey;
+    font-family:segoe UI;
+    background-color:white;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+p {
+    text-align:left;
+    margin-left:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    width:90%;
+    height:40px;
+    margin:20px 10px;
+    padding:12px 20px;
+    display:inline-block;
+    border-radius:10px;
+    border:0px solid;
+    font-size:18px;
+    background-color:#e2e2e2;
+}
+.button {
+    width:90%;
+    height:55px;
+    font-size:18px;
+    margin-left:13px;
+    background-color:blue;
+    color:white;
+    border:0px solid;
+    border-radius:10px;
+}
+button {
+    width:50%;
+    height:55px;
+    font-size:18px;
+    margin-left:13px;
+    background-color:grey;
+    color:white;
+    border:0px solid;
+    border-radius:10px;
+    margin-bottom:70px;
+}
+.dashboard {
+    width:100%;
+    align-items:center;
+    display:flex;
+    background-color:#17233b;
+    justify-content:space-between;
+    padding:10px;
+}
+.dash {
+    font-size:24px;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+a:hover {
+    color:blue;
+    transform:scale(1.1);
+    transition:0.2s;
+}
+h1 {
+    font-size:30px;
+    font-weight:100px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    margin-left:10px;
+}
+.list{
+    display:flex;
+    color:white;
+}
+.text {
+    color:#ff9837;
+}
+.menubar {
+    margin: 0;
+    display: none;
+    cursor:pointer;
+}
+.menubar li{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.dashboard .menu {
+    display:none;
+    position:absolute;
+    top:50px;
+    left:0;
+    width:100%;
+}
+.open .menu {
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:20px;
+    background-color:grey;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:#353836;
+}
+.bar {
+    width:35px;
+    height:3px;
+    background-color:white;
+    margin:6px 0;
+    transition:0.4s;
+}
+ul {
+    list-style:none;
+}
+li {
+        padding-left:16px;
+}
+.about {
+    display:flex;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+.about .box {
+    font-size:40px;
+}
+.about .box p {
+    text-align:center;
+}
+#logo {
+    font-size:36px;
+    font-weight:800;
+}
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/*responsive design*/
+@media only screen and (max-width: 480px) {
+    .parent {
+    align-items:center;
+    justify-content:center;
+    padding-top:30px;
+    }
+    .box {
+        width:90%;
+    }
+    .box2 {
+        width:90%;
+    }
+    .menubar {
+        display:block;
+    }
+    .wide {
+        display:none;
+    }
+    button {
+        width:60%;
+    }
+    .about {
+        margin-top:50px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .box {
+        margin-top:100px;
+        font-size:50px;
+        width:60%;
+        height:800px;
+    }
+    .button{
+        height:70px;
+        font-size:27px;
+    }
+    input {
+        font-size:27px;
+        height:55px;
+    }
+    h1 {
+        margin-right:50%;
+    }
+}
